@@ -12,7 +12,7 @@ module.exports = defineConfig({
     inlineAssets: true,
     saveAllAttempts: false,
     autoOpen: true,
-    overwrite: false,
+    overwrite: true,
     code: false
   },
 

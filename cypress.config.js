@@ -4,7 +4,6 @@ module.exports = defineConfig({
 
   projectId: "szztj7",
 
-
   reporter: 'cypress-mochawesome-reporter',
   reporterOptions: {
     charts: true,

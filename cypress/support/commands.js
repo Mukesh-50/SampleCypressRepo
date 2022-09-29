@@ -44,10 +44,11 @@ Cypress.Commands.add("login", function (uname, pass) {
 })
 
 
-Cypress.Commands.add("switchToIframe", (frame) => {
-    return cy.get(frame)
-        .its('0.contentDocument')
-        .its('body').then(cy.wrap)
+Cypress.Commands.add("swithchToIframe", function (frameIDorNameOrLocator) {
+    return cy.get(frameIDorNameOrLocator)
+        .its("0.contentDocument")
+        .its("body")
+        .then(cy.wrap)
 })
 
 
